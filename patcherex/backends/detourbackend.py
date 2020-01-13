@@ -372,6 +372,7 @@ class DetourBackend(Backend):
         return self.ncontent[start:start + len(self.patched_tag)] == self.patched_tag
 
     def setup_headers(self, segments):
+        #Assuming multiple patches are being added to already patched binary
         #if self.is_patched():
         #    return
 
